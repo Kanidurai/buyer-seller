@@ -25,7 +25,7 @@ import userRoutes from "./routes/userRoutes";
 import sellerRoutes from "./routes/sellerRoutes";
 
 app.use("/api/users", userRoutes);
-app.use("/api/seller", sellerRoutes);
+app.use("/api/sellers", sellerRoutes);
 
 mongoose
   .connect(process.env.MONGODB_URI || "", {
