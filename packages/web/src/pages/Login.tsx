@@ -133,7 +133,9 @@ const Login: React.FC = () => {
         setTimeout(() => {
           setemail('');
           setpassword('');
+          navigate('/home')
         }, 3000);
+       
       } else {
         const error = message.toLowerCase();
         if (error.includes('email')) {
@@ -160,7 +162,6 @@ const Login: React.FC = () => {
     }
   };
   
-  
   const handleKeyPress = (event: any) => {
     if (event.key === "Enter") {
       handleLogin();
@@ -172,7 +173,7 @@ const Login: React.FC = () => {
     if (loggedInUser === "1") {
       navigate("/home");
     } else {
-      navigate("/dashboard");
+      navigate("/home");
     }
   };
   const customCloseIcon = (
@@ -312,7 +313,7 @@ const Login: React.FC = () => {
                       marginTop: "-25px",
                     }}
                   >
-                    S
+                    s
                   </span>
                 </Typography>
               </Item>
@@ -407,6 +408,19 @@ const Login: React.FC = () => {
                     },
                   }}
                   disabled={Boolean(errorMessage)}
+                  InputProps={{
+                    endAdornment: (
+                      <InputAdornment position="end">
+                        <IconButton
+                          onClick={() => setShowPassword(!showPassword)}
+                          edge="end"
+                          sx={{ color: "#FFFFFF" }}
+                        >
+                          {showPassword ? <VisibilityOff /> : <Visibility />}
+                        </IconButton>
+                      </InputAdornment>
+                    ),
+                  }}
                 />
               </Item>
               <Item>
@@ -414,11 +428,12 @@ const Login: React.FC = () => {
                   onClick={handleLogin}
                   disabled={!isLoginButtonDisabled}
                   sx={{
-                    marginTop:"30px",
+                    marginTop: "30px",
                     backgroundColor: "#30BBC4",
                     width: "350px",
                     height: "55px",
                     color: "#FFFFFF"
+
                   }}
                 >
                   Login
