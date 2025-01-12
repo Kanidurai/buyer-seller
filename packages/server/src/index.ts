@@ -1,9 +1,31 @@
-import app from "./app";
+
 import mongoose from "mongoose";
+import cors from "cors";
+import express from "express";
+import bodyParser from "body-parser";
 
 require("dotenv").config();
 
 const PORT = process.env.BE_PORT;
+
+const corsOptions = {
+  origin: "http://localhost:3000",  
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true,
+};
+
+const app = express();
+
+app.use(cors(corsOptions));
+
+app.use(express.json()); 
+
+import userRoutes from "./routes/userRoutes";
+import sellerRoutes from "./routes/sellerRoutes";
+
+app.use("/api/users", userRoutes);
+app.use("/api/seller", sellerRoutes);
 
 mongoose
   .connect(process.env.MONGODB_URI || "", {
@@ -21,3 +43,5 @@ mongoose
     console.error("Error connecting to MongoDB:", error.message);
     process.exit(1);
   });
+
+export default app;
