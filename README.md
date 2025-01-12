@@ -12,6 +12,8 @@ This is the frontend application for the Seller Rating System. The application a
 
 [![Watch the Demo](./packages/web/src/assets/Frame.png)](https://drive.google.com/file/d/1lwkT61SOtNMtj2qQ2OVOTVdx9q3ndfzz/preview)
 
+<iframe src="https://drive.google.com/file/d/1lwkT61SOtNMtj2qQ2OVOTVdx9q3ndfzz/preview?autoplay=1" width="640" height="480" allow="autoplay"></iframe>
+
 ## Prerequisites
 
 Before you begin, ensure you have the following installed:
