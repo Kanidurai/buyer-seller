@@ -10,7 +10,7 @@ This is the frontend application for the Seller Rating System. The application a
 - **Material-UI (MUI)**: Component library for styling and UI components.
 - **CSS**: For styling.
 
-[Watch the Demo Video (Autoplay)](https://drive.google.com/file/d/1lwkT61SOtNMtj2qQ2OVOTVdx9q3ndfzz/preview?autoplay=1)
+[Watch the Seller Rating Application Demo (Autoplay)](https://drive.google.com/file/d/1lwkT61SOtNMtj2qQ2OVOTVdx9q3ndfzz/preview?autoplay=1)
 
 ## Prerequisites
 
