@@ -9,7 +9,9 @@ This is the frontend application for the Seller Rating System. The application a
 - **Yarn**: Dependency management and task runner.
 - **Material-UI (MUI)**: Component library for styling and UI components.
 - **CSS**: For styling.
-  
+
+[![Watch the Demo](./packages/web/src/assets/Frame.png)](https://drive.google.com/file/d/1lwkT61SOtNMtj2qQ2OVOTVdx9q3ndfzz/preview)
+
 ## Prerequisites
 
 Before you begin, ensure you have the following installed:

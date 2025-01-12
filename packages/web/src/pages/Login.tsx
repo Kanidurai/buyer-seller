@@ -170,11 +170,6 @@ const Login: React.FC = () => {
 
   const handleClose = () => {
     setModalOpen(false);
-    if (loggedInUser === "1") {
-      navigate("/home");
-    } else {
-      navigate("/home");
-    }
   };
   const customCloseIcon = (
     <IconButton
