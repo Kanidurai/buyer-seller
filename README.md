@@ -11,8 +11,9 @@ This is the frontend application for the Seller Rating System. The application a
 - **CSS**: For styling.
 
 [![Watch the Demo](./packages/web/src/assets/Frame.png)](https://drive.google.com/file/d/1lwkT61SOtNMtj2qQ2OVOTVdx9q3ndfzz/preview)
+<iframe src="https://player.vimeo.com/video/123456789?autoplay=1" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-<iframe src="https://drive.google.com/file/d/1lwkT61SOtNMtj2qQ2OVOTVdx9q3ndfzz/preview?autoplay=1" width="640" height="480" allow="autoplay"></iframe>
+
 
 ## Prerequisites
 
